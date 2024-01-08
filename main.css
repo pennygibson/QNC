@@ -1,0 +1,1459 @@
+/***************************
+COLORS
+Gold: 
+Dark Grey: 
+Black: 
+****************************/
+
+*{
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+.overlaycaption,figure,
+b, u, i, center,
+dl, dt, dd, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%; 
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+	margin: 0;
+	font-family: 'Lato', sans-serif, 'helvetica', 'arial';
+	font-weight:400;
+	letter-spacing: 0.02em;
+	line-height: 26px;
+}
+
+:focus  { outline: 0; }
+
+/* deleting the default appearence for form elements */
+input[type=text], input[type=password], input[type=submit], input[type=button], textarea, button, select 
+{ 
+	-moz-appearance: none; -webkit-appearance: none;
+	border-style:solid;
+	border-color:#CEBC8B;
+}
+
+/* HTML5 display definitions */
+article, aside, details, .overlaycaption, figure, footer, header, hgroup, menu, nav, section, dialog { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; visibility: hidden; }
+
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	overflow:hidden;
+}
+
+.fullPageHeader{
+	display: flex;
+	width: 100%;
+	margin-bottom:140px;
+}
+.homeLeft{
+	min-width:60%;
+}
+.livingRoomImage{
+	background-image: url(images/renovated-living-room.jpeg); 
+  	background-color: black; /* Used if the image is unavailable */
+  	height: 100vh; /* You must set a specified height */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	width:100%;
+	}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding:10px 0 0 10px;
+}
+
+nav img{
+	max-height: 80px;
+}
+.linkContainer{
+	display:flex;
+	justify-content:space-around;
+	width:60%;
+}
+.headingContainer{
+	max-width: 70%;
+	padding-left: 80px;
+
+}
+
+.mainHeading{
+	font-size: 4em;
+	padding: 24% 0 10%;
+	line-height:70px
+	}
+
+.subText{
+	font-size: 1.5em;
+	line-height:40px;
+}
+.formContainer{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	background-color:black;
+	opacity:90%;
+	color:white;
+	width:30%;
+	padding: 60px;
+	position:absolute;
+	top:22vh;
+	right:20%;
+}
+.subFormContainer{
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+}
+.formTitle{
+	padding-bottom:20px;
+	font-size:1.4em;
+	text-align:center;
+	color: #CEBC8B;
+}
+.formGroup{
+	display: flex;
+	flex-direction: column;
+}
+.formTextArea{
+	padding:6px;
+}
+textarea{
+	height:100px;
+}
+
+.formLabel{
+	padding:12px 0 2px;
+}
+.outerButtonContainer{
+	display:flex;
+	width:100%;
+	justify-content:center;
+	margin-top:30px;
+}
+.buttonContainer{
+	margin-top:20px;
+}
+.button{
+	padding:10px 30px;
+	border-color: #CEBC8B;
+	border-width: 6px;
+}
+/**************************************
+MOBILE HOME HEADER
+*****************************************/
+.fullPageHeaderMobile{
+	display:none;
+}
+.linkContainerMobile{
+	width:100%;
+}
+.mobileLogoHome{
+	text-align:center;
+}
+.centeredLogo{
+	max-width:400px;
+	margin: 20px auto;
+}
+.formContainerMobile{
+	position:inherit;
+	width:50%;
+}
+.mobileHomeContentContainer{
+	display:flex;
+	width:96%;
+	margin:40px auto 80px;
+	justify-content:space-around;
+}
+.headingContainerMobile{
+	max-width:40%;
+}
+.mainHeadingMobile{
+	font-size:3em;
+	line-height:60px;
+	padding-bottom:20px;
+}
+.subTextMobile{
+	font-size:1.3em;
+	line-height:40px;
+	padding-top:10px;
+}
+
+.marbleContainer{
+	background-image:url(images/marble-countertop2.jpg);
+	background-color: black; 
+  	height: 600px; /* You must set a specified height */
+  	background-repeat: no-repeat; 
+  	background-size: cover;
+	width:100%;
+	display: flex;
+	justify-content:space-between;
+}
+.servicesHeading{
+	font-size:3em;
+	color:#CEBC8B;
+	line-height:60px;
+	padding-bottom: 20px;
+}
+.servicesTextContainer{
+	color:white;
+	padding-top: 80px;
+	padding-right: 100px;
+	text-align:center;
+}
+.servicesTextColumns{
+	display:flex;
+	width:80%;
+	margin: 40px auto;
+	text-align:left;
+	justify-content:space-between;
+}
+.servicesTextContainer p{
+	font-size: 1.3em;
+	line-height: 36px;
+}
+
+.kitchenImage{
+	padding:180px 0 0 100px;
+}
+.serviceButtonContainer{
+	margin-top:20px;
+	
+}
+.mobileServiceButtonContainer{
+	display:none;
+}
+.serviceButton{
+	padding: 10px 20px;
+	background-color:transparent;
+	font-size:1.2em;
+	color:white;
+	letter-spacing:1px;
+	text-transform:uppercase;
+	cursor:pointer;
+	transition: background 0.8s;
+	}
+.serviceButton:hover{
+	/******background: linear-gradient(to right,#CEBC8B,#FFEBB3);*****/
+	background-color: #CEBC8B;
+}
+.contactImage{
+	background-image:url(images/contact-Image2.jpg);
+	background-color: black; 
+  	height: 940px; 
+  	background-repeat: no-repeat; 
+  	background-size: cover;
+	width:100%;
+	margin-top:200px;
+	display:flex;
+	justify-content:center;
+	
+}
+.contactInfoContainer{
+	width:60%;
+	display:flex;
+	justify-content:space-around;
+}
+.contactInfo, .contactInfoForm{
+	background-color:black;
+	width: 90%;
+	opacity: 90%;
+	height:60%;
+}
+.contactInfo{
+	margin-top:10%;
+	margin-right:10px;
+}
+.contactInfoSubContainer{
+	display:flex;
+	flex-direction:column;
+	margin:auto;
+	width:70%;
+	padding-top:40px;
+}
+.svgContainer{
+	display:flex;
+	align-items:center;
+	padding:4px 0;
+	justify-content:center;
+	flex-direction:column;
+}
+.contactLink{
+	color:white;
+	color:#CEBC8B;
+}
+.contactInfoForm{
+	margin-top:30%;
+	margin-left:-70px;
+}
+.contactFormHeading{
+	color:white;
+	padding: 60px 0 20px;
+	text-align:center;
+	font-size:2em;
+	
+}
+
+.messageFormContainer{
+	display:flex;
+	width:100%;
+	justify-content:center;
+}
+.formLabel{
+	color:white;
+	color:#CEBC8B;
+}
+.messageTextArea{
+	width:280px;
+}
+.outerMessageButtonContainer{
+	margin-top:0;
+}
+.messageButtonContainer{
+	width:60%;
+}
+.contactHeading{
+	font-size:2em;
+	text-align:center;
+	padding-top:80px;
+	color:white;
+}
+svg{
+	max-width:30px;
+}
+/***********************************************
+FOOTER
+************************************************/
+
+.footer{
+	background-color: black;
+	height:100%;
+}
+.footerContainer{
+	color:white;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+	width: 96%;
+	margin: 0 auto;
+	padding-bottom:40px;
+}
+.footerLogo{
+	padding-top:20px;
+}
+.footerContent{
+	font-size:.9em;
+}
+.footerHeading{
+	padding-bottom:10px;
+	position: relative;
+}
+.belowHeading{
+	padding-top:12px;
+}
+#extraHeading{
+	padding-top:20px;
+}
+.footerHeading:after{
+	content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+	background: #CEBC8B;
+}
+.footerLink{
+	color:white;
+}
+.footerLink:hover{
+	background: -webkit-linear-gradient( left,#CEBC8B,#FFEBB3);
+  	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.footerContent{
+	padding-top:40px;
+}
+.subFooter img{
+	max-width:60%;
+}
+/*****************************************
+MAIN NAV LINK EFFECTS
+*******************************************/
+.navLink {
+  display: inline-block;
+}
+
+.link {
+  position: relative;
+  display: block;
+  cursor: pointer;
+	color:black;
+}
+
+.link:before, .link:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 0;
+  margin-top: -0.5px;
+  background: #333;
+}
+
+.link:before {
+  left: -2.5px;
+}
+.link:after {
+  right: 2.5px;
+  background: #333;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.link:hover:before {
+  background: #333;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.link:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+/*******************************
+BUTTON HOVER
+*****************************************/
+.buttonfx{
+  color: black; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #CEBC8B;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px; 
+  text-transform: uppercase;
+  font:16px 'Bitter', sans-serif; /* use google font */
+  line-height: 2;
+  position: relative;
+	display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+	text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #CEBC8B; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.buttonfx:before{
+  background: #fff; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+	color: white;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+.slidebottomleft:after{
+  transform: translate3D(-100%,100%,0);
+}
+
+.slidebottomleft:hover:after{
+	transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+/*******************************
+COMMERCIAL PAGE
+*****************************************/
+.fullWidthNav{
+	background-color:white;
+	position:fixed;
+	z-index:50;
+	padding-bottom:10px;
+}
+
+.fullWidthLinkContainer{
+	width: 40%;
+	display: flex;
+	justify-content:space-around;
+}
+.fullWidthNavLink{
+	padding: 5px 0;
+}
+.whiteLink{
+	color:black;
+	transition: all .5s ease;
+}
+.whiteLink:hover{
+	color:#CEBC8B;
+	letter-spacing:.3em;
+}
+.quoteLink{
+	border: 2px solid #CEBC8B;
+	padding: 5px 20px;
+}
+.commercialHeader{
+	padding:60px 60px 0;
+}
+.commercialHeading{
+	font-size:4em;
+	line-height:60px;
+	text-transform:uppercase;
+	padding-bottom:40px;
+	text-align:center;
+}
+.commercialSubHeading{
+	font-size:2.4em;
+	line-height: 50px;
+	padding: 80px 0 40px;
+	width: 50%;
+}
+.commercialServicesList{
+	line-height:36px;
+	text-transform:uppercase;
+	font-size:1.5em;
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+	padding-bottom:80px;
+}
+.seperator{
+	color:#CEBC8B;
+	font-weight:bold;
+	padding: 0px 3px;
+}
+.commercialImageContainer{
+	display:flex;
+	flex-direction:row;
+	padding:100px 0 140px;
+	justify-content:center;
+	text-align:left;
+	align-items:center;
+	}
+
+.commercialTextSubHeading{
+	font-size:2.5em;
+	line-height: 50px;
+	padding-bottom:20px;
+}
+.contactImageCommercial{
+	background-image:url(images/black-herringbone-tile.jpg);
+	background-size:cover;
+	background-color: white; 
+  	height: 100%; 
+	width:100%;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	padding: 5% 0;
+}
+.contactHeadingCommercial{
+	font-size:2em;
+}
+.contactFormHeadingCommercial{
+	font-size:2em;
+	padding-top:80px;
+}
+.contactInfoFormCommercial{
+	margin-top:0;
+}
+.contactInfoCommercial{
+	margin-top:0;
+}
+
+.contactInfoFormCommercial, .contactInfoCommercial{
+	height:inherit;
+	padding-bottom:5%;
+}
+.contactInfoFormCommercial{
+	margin-left:12%;
+}
+.contactInfoContainerCommercial{
+	width: 70%;
+}
+.buttonContainerCommercial{
+	margin-top:40px;
+}
+.commercialFooter{
+	background-color:white;
+	box-shadow:-2px 2px 4px 0;
+}
+.commercialFooter img{
+	padding-top:20px;
+}
+.footerContainerCommercial, .footerLinkCommercial{
+	color:black;
+	text-transform:uppercase;
+}
+.subFooterCommercial{
+	background-color:black;
+	padding:20px;
+}
+.imageContent{
+	position: relative;
+  	width: 90%;
+  	max-width: 600px;
+  	margin: auto;
+  	overflow: hidden;
+}
+.imageContent .imageOverlay{
+	background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.imageContent:hover .imageOverlay{
+	opacity:1;
+}
+.contentDetails{
+	color:white;
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+	top:80%;
+}
+.imageContent:hover .contentDetails{
+	top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.imageText{
+	color:white;
+	font-size:1.2em;
+	text-transform:uppercase;
+}
+
+/****************************
+Alternate Commercial Page
+****************************/
+.commercialBackgroundImage{
+	background-image:url(images/buildingPlans.jpg);
+	background-color: black; 
+  	height: 940px; 
+  	background-repeat: no-repeat; 
+  	background-size: cover;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	position:relative;
+	padding:0;
+}
+.backgroundOverlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.commercialMainHeader{
+	color:white;
+	position:sticky;
+	top:40%;
+}
+.commercialTextContainer{
+	width:70%;
+	padding: 0 80px;
+}
+.commercialAbout{
+	padding-top:20px;
+}
+
+
+/**************************************
+NEW COMMERCIAL PAGE
+**************************************/
+.commercialHeaderNew{
+	padding:0;
+
+}
+.commercialBackgroundImage2{
+	background-image:url(images/buildingPlans.jpg);
+	background-color:black;
+	height:360px;
+	background-size:cover;
+	background-position:bottom;
+	width:100%;
+	margin:0 auto;
+	background-attachment:fixed;
+}
+.commercialHeading2{
+	padding: 140px 20px 60px;
+	color:black;
+}
+.commercialTextBelowHeader{
+	padding-top:40px;
+}
+.commercialServicesList2{
+	font-size:1.3em;
+	width:94%;
+	padding-bottom:40px;
+	color:#2E3133;
+}
+.contactInfoCommercial, .contactInfoFormCommercial{
+	background-color:white;
+	opacity:inherit;
+}
+.contactHeadingCommercial, .contactFormHeadingCommercial{
+	color:black;
+}
+.contactLinkCommercial, .formLabelCommercial{
+	color:black;
+}
+.mobileLogoContainer{
+	display:none;
+}
+.mobileCommercialHeader{
+	display:none;
+}
+/****************************
+THANK YOU PAGE
+****************************/
+.whiteNav{
+	background-color:white;
+
+}
+.blackLink{
+	color:#CEBC8B;
+	transition: all .5s ease;
+	font-size:1.1em;
+	letter-spacing:2px;
+}
+.blackLink:hover{
+	color:black;
+	letter-spacing:.3em;
+}
+.contactBackgroundImage{
+	background-image: url(images/renovated-living-room%20copy.jpg);
+	background-position: bottom;
+	height:700px;
+}
+.thankYouOverlay{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.thankYouHeading{
+	width:80%;
+	margin: 0 auto;
+	line-height:75px;
+}
+.tallerLogo{
+	max-height:100px;
+}
+
+/****************************
+CONTACT PAGE
+****************************/
+.mapImage{
+	background-image: none; 
+  	background-color: black; /* Used if the image is unavailable */
+  	height: 100vh; /* You must set a specified height */
+  	background-repeat: no-repeat; /* Do not repeat the image */
+  	background-size: cover; /* Resize the background image to cover the entire container */
+	width:100%;
+}
+iframe{
+	width:100%;
+	height:100%;
+	filter:grayscale(70%);
+}
+.contactPageHeaderHeading{
+	font-size:3em;
+	text-align:center;
+	padding: 12% 0;
+}
+.contactPageInfoContainer{
+	display:flex;
+	width:90%;
+	margin:0 auto;
+	justify-content:space-around;
+}
+.contactPageHeadings{
+	padding-bottom:10px;
+	position:relative;
+	
+}
+.contactPageHeadings:after{
+	content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+	background: #CEBC8B;
+}
+.contactInfoFormAbout{
+	margin-left:0;
+}
+.contactPageContactForm{
+	display: flex;
+	width:90%;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding-top:10%;
+}
+.jobTitle{
+	padding-top:20px;
+}
+.fullPageContainerAbout{
+	margin-bottom:0;
+}
+.showMobile{
+	display:none;
+}
+.mobileNavContact{
+	display:none;
+} 
+/*****************************************
+HAMBURGER MENU
+*******************************************/
+.menu-wrap {
+  display:none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width:100%;
+  background-color:#000;
+  height:60px
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #CEBC8B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: .6s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: rgba(0, 0, 0, 0.8);
+  /*border-radius: 50%;*/
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.8em;
+  padding: 1.2em;
+	font-weight:bold;
+	letter-spacing:.1em;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+.subFooter{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.siteBy{
+	color:black;
+	transition: all .5s ease;
+}
+.siteBy:hover{
+	letter-spacing:.1em;
+	color:#CEBC8B;
+}
+.copyrightWhite{
+	color:white;
+}
+.siteByWhite{
+	color:white;
+}
+
+.showMobileFooter{
+	display:none;
+}
+.whiteButton:hover{
+	color:#CEBC8B;
+	letter-spacing:.2em;
+}
+.instagram{
+	display:none;
+}
+/***********************
+TEMPORARY GOOGLE MAP
+***************************/
+iframe{
+	display:none;
+}
+
+
+/****************************
+MEDIA QUERIES
+
+HOME PAGE
+****************************/
+
+@media(max-width:1375px){
+	.ServicesTextColumns{
+		margin: 0 auto;
+	}
+	.marbleContainer{
+		justify-content:space-around;
+		align-items:center;
+		height:660px;
+	}
+	.servicesTextContainer{
+		padding:0;
+	}
+	.kitchenImage{
+		padding:0;
+		max-width:100%;
+	}
+}
+
+@media(max-width:1200px){
+	.contactImage{
+		margin-top:140px;
+	}
+	.contactInfoContainer{
+		width:80%;
+	}
+	nav{
+		align-items:baseline;
+		padding: 0;
+		flex-direction:column;
+	}
+	.linkContainer{
+		width:100%;
+		padding-top:20px;
+	}
+	.livingRoomImage{
+		height:900px;
+	}
+	.formContainer{
+		width:33%;
+		padding:40px;
+	}
+	.fullWidthNav{
+		flex-direction:row;
+	}
+	.commercialHeading{
+		font-size:3em;
+	}
+	.commercialHeading2{
+		padding:160px 20px 80px;
+	}
+}
+
+@media(max-width:1100px){
+	.homeLeftContact{
+		min-width:65%;
+	}
+	.contactPageContactForm{
+		width:96%;
+	}
+}
+@media(max-width:950px){
+	.commercialTextContainer{
+		width:100%;
+		padding: 0 40px;
+	}
+	.commercialTextSubHeading{
+		font-size:2em;
+		line-height:42px;
+		padding-bottom: 0;
+	}
+	.contactImageCommercial{
+		padding:5%;
+	}
+	.contactInfoContainerCommercial{
+		width:100%;
+	}
+	.contactHeadingCommercial, .contactFormHeadingCommercial{
+		font-size:1.5em;
+	}
+	.contactInfoFormCommercial{
+		margin-left:5%;
+	}
+	.commercialFooter img{
+		max-width:80%;
+	}
+	.removeWord{
+		display:none;
+	}
+	.fullPageHeaderMobile{
+		display:block;
+	}
+	.homeMobileMenu{
+		display:flex;
+		align-items:center;
+		color:white;
+	}
+	.mobileQuote{
+		color:white;
+		border:1px solid #CEBC8B;
+		height:60%;
+		padding:5px 10px;
+		margin-left:15px;
+		letter-spacing:.1em;
+	}
+	.mobileLogoContainerHome{
+		display:flex;
+		justify-content:center;
+		margin-top:80px;
+		margin-bottom:20px;
+	}
+	.mobileLogoContainerHome img{
+		max-width:50%;
+	}
+	.fullPageHeaderHome{
+		display:none;
+	}
+	.formContainerMobile{
+		width:50%;
+	}
+	.fullPageContainerAbout{
+		flex-direction:column;
+	}
+	.mapImage, iframe{
+		height:300px;
+	}
+	.contactInfoContainer{
+		width:100%;
+	}
+	.marbleContainer{
+		height: 100%;
+		padding: 5% 2%;
+		justify-content:center;
+		flex-direction:column;
+		background-position:bottom;
+	}
+	.servicesHeading{
+		padding:60px 0 20px;
+	}
+	.contactImage{
+		margin-top:0;
+		background-image:none;
+		background-color:white;
+	}
+	.mainHeading{
+		font-size:3em;
+		line-height:60px;
+	}
+	.headingContainer{
+		padding: 0 40px;
+		max-width:90%;
+	}
+	
+	.kitchenImageContainer{
+		text-align:center;
+		order:2;
+	}
+	.fullWidthLinkContainer{
+		width:50%;
+	}
+	.serviceButtonContainer{
+		display:none;
+	}
+	.mobileServiceButtonContainer{
+		display:block;
+		padding:40px 0;
+	}
+	.thankYouMainHeader{
+		top:30%;
+	}
+	.quoteMobileLink{
+		color:white;
+	}
+	.mobileQuote a{
+		color:white;
+	}
+	.subFooter{
+		flex-direction:column;
+	}
+	
+
+	
+}
+@media(max-width:700px){
+	.homeLeftContact{
+		display:flex;
+		flex-direction:column;
+		width:100%;
+	}
+	.hideMobile{
+		display:none;
+	}
+	.contactPageContactForm{
+		width:100%;
+	}
+	.contactPageContactForm{
+		flex-direction:column;
+	}
+	.contactInfoFormCommercial{
+		margin-left:0;
+	}
+	.contactPageInfoContainer{
+		width: 80%;
+		margin:0 auto;
+		justify-content:flex-start;
+	}
+	.contactPageEmailsContainer{
+		width:80%;
+		margin:0 auto;
+	}
+	.showMobile{
+		display:flex;
+	}
+	.bottomPadding{
+		padding-bottom:20px;
+	}
+	.mobileHeading{
+		text-align:center;
+		font-size:1.4em;
+	}
+	.buttonContainerCommercial{
+		margin-top:0;
+	}
+	.mapImage{
+		margin-top:60px;
+	}
+	.footerContainer{
+		flex-direction:column;
+		padding-left:10%;
+	}
+	.mobileAboveFooter{
+		background-color:black;
+	}
+	.mobileAboveFooter img{
+		width:60%;
+		margin: 0 auto;
+		padding-top:40px;
+	}
+	.showMobileFooter{
+		display:flex;
+	}
+	.mobileHomeContentContainer{
+		width:80%;
+		margin:40px auto;
+		flex-direction:column;
+	}
+	.buttonfx{
+		background-color:white;
+	}
+	.headingContainerMobile{
+		max-width:100%;
+	}
+	.formContainerMobile{
+		width:100%;
+		margin-top:40px;
+	}
+	.contactHeading{
+		padding-top:0;
+	}
+	.mainHeadingMobile{
+		font-size:2.5em;
+		line-height:50px;
+	}
+	.mobileLogoContainerHome img{
+		max-width:90%;
+	}
+	.servicesTextColumns{
+		flex-wrap:wrap;
+		justify-content: flex-start;
+		color:black;
+	}
+	.servicesButtonContainer{
+		padding:10px 0;
+	}
+	.serviceButton{
+		color:black;
+	}
+	.marbleContainer{
+		background-image:none;
+		background-color: white; 
+	}
+	.servicesHeading{
+		padding:0;
+		font-size:2em;
+		line-height: 40px;
+		width:90%;
+		margin: 0 auto;
+		color:black;
+	}
+	.mobileServiceButtonContainer{
+		display:none;
+	}
+	.contactInfoContainer{
+		flex-direction:column;
+		margin-top:40px;
+	}
+	.contactInfoFormCommercial{
+		margin-left:0;
+	}
+	.contactInfo, .contactInfoForm{
+		width:100%;
+	}
+	.contactImageCommercial{
+		background-image:none;
+		padding:0;
+	}
+	.centeredLogo{
+		max-width:100%;
+	}
+	.mobileNavContact{
+		display:block;
+	}
+	.contactPageHeaderHeading{
+		font-size:2em;
+		padding:40px 0 20px;
+	}
+	.subFooter img{
+		max-width:96%;
+	}
+	/*******************************
+	COMMERCIAL PAGE
+	********************************/
+	.menu-wrap{
+		display:flex;
+		align-items:center;
+	}
+	.fullWidthNav{
+		display:none;
+	}
+	.mobileLogoContainer{
+		display:flex;
+		justify-content:center;
+		margin-top:80px;
+		margin-bottom:20px;
+	}
+	
+	.mobileLogoContainer img{
+		max-width:90%;
+	}
+	.commercialHeader{
+		display:none;
+	}
+	#thankYouHeader{
+		display:flex;
+	}
+	.commercialBackgroundImage2{
+		height:200px;
+	}
+	.mobileCommercialHeader{
+		display:block;
+		text-align:center;
+		font-size:2em;
+		line-height:50px;
+		padding-top:20px;
+	}
+	.commercialTextBelowHeader{
+		padding-top:20px;
+	}
+	.commercialServicesList2{
+		font-size:1.2em;
+		padding-bottom:0;
+		width:90%;
+	}
+	.commercialImageContainer{
+		flex-direction:column;
+		padding:20px 0 80px;
+	}
+	.commercialTextContainer{
+		margin:40px auto;
+	}
+	.commercialTextSubHeading{
+		margin-bottom:40px;
+		font-size:1.8em;
+	}
+	.contactFormHeadingCommercial{
+		padding-top:40px;
+	}
+	.footerContent{
+		padding-top:10px;
+	}
+	.contactInfoSubContainer{
+		box-shadow:0 4px 2px -2px #ddd;
+		padding-bottom:10px;
+	}
+	
+}
+
+
+
+
+
+
+
+
