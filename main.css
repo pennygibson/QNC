@@ -1411,6 +1411,7 @@ HOME PAGE
 	}
 	.commercialBackgroundImage2{
 		height:200px;
+		background-attachment:inherit;
 	}
 	.mobileCommercialHeader{
 		display:block;
