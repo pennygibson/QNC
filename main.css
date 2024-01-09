@@ -1410,6 +1410,7 @@ HOME PAGE
 		display:flex;
 	}
 	.commercialBackgroundImage2{
+		background-image:url(images/buildingPlansMobile.jpg);
 		height:200px;
 		background-attachment:inherit;
 	}
