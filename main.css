@@ -810,7 +810,8 @@ THANK YOU PAGE
 CONTACT PAGE
 ****************************/
 .mapImage{
-	background-image: none; 
+	background-image: url(images/built%20ins%202%20.jpeg); 
+	background-position:center;
   	background-color: black; /* Used if the image is unavailable */
   	height: 100vh; /* You must set a specified height */
   	background-repeat: no-repeat; /* Do not repeat the image */
