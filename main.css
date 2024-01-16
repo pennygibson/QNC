@@ -758,6 +758,7 @@ NEW COMMERCIAL PAGE
 	width:94%;
 	padding-bottom:40px;
 	color:#2E3133;
+	max-width:1500px;
 }
 .contactInfoCommercial, .contactInfoFormCommercial{
 	background-color:white;
