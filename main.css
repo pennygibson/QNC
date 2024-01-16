@@ -121,6 +121,7 @@ nav img{
 	position:absolute;
 	top:22vh;
 	right:20%;
+	max-width:450px;
 }
 .subFormContainer{
 	display: flex;
@@ -209,7 +210,7 @@ MOBILE HOME HEADER
   	background-size: cover;
 	width:100%;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 }
 .servicesHeading{
 	font-size:3em;
@@ -275,6 +276,7 @@ MOBILE HOME HEADER
 	width:60%;
 	display:flex;
 	justify-content:space-around;
+	max-width:900px;
 }
 .contactInfo, .contactInfoForm{
 	background-color:black;
@@ -616,6 +618,7 @@ COMMERCIAL PAGE
 }
 .contactInfoContainerCommercial{
 	width: 70%;
+	max-width:1000px;
 }
 .buttonContainerCommercial{
 	margin-top:40px;
@@ -1452,7 +1455,11 @@ HOME PAGE
 	}
 	
 }
-
+@media screen and (min-width:1800px){
+	.formContainer{
+		right:25%;
+	}
+}
 
 
 
