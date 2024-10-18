@@ -229,7 +229,8 @@ MOBILE HOME HEADER
 	width:80%;
 	margin: 40px auto;
 	text-align:left;
-	justify-content:space-between;
+	justify-content:center;
+	text-align:center;
 }
 .servicesTextContainer p{
 	font-size: 1.3em;
@@ -385,7 +386,7 @@ FOOTER
     height: 3px;
     bottom: 0;
     left: 0;
-	background: #CEBC8B;
+	background:#CEBC8B;
 }
 .footerLink{
 	color:white;
@@ -1335,9 +1336,10 @@ HOME PAGE
 		max-width:90%;
 	}
 	.servicesTextColumns{
-		flex-wrap:wrap;
-		justify-content: flex-start;
+		/**flex-wrap:wrap;
+		justify-content: flex-start; **/
 		color:black;
+		display:block;
 	}
 	.servicesButtonContainer{
 		padding:10px 0;
